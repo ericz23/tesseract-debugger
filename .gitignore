@@ -1,0 +1,97 @@
+# =============================================================
+# Tesseract Debugger — .gitignore
+# =============================================================
+
+# -------------------------------------------------------------
+# Build directory (CMake/Ninja artifacts, compiled binaries,
+# static libraries)
+# -------------------------------------------------------------
+build/
+
+# -------------------------------------------------------------
+# Fuzzer build directory — ignore all generated artifacts but
+# KEEP project-specific scripts and docs:
+#   build-fuzz/RUN-FUZZER.md
+#   build-fuzz/clang++-fuzz-wrapper.sh
+#   build-fuzz/fuzz_stddef_fix.h
+# NOTE: negation (!pattern) only works when the parent dir is
+# NOT itself ignored, so we ignore individual entries below.
+# -------------------------------------------------------------
+build-fuzz/CMakeCache.txt
+build-fuzz/CMakeFiles/
+build-fuzz/TesseractTargets.cmake
+build-fuzz/cmake/
+build-fuzz/cmake_install.cmake
+build-fuzz/cmake_uninstall.cmake
+build-fuzz/build.ninja
+build-fuzz/.ninja_deps
+build-fuzz/.ninja_log
+build-fuzz/config_auto.h
+build-fuzz/config_auto.h.in
+build-fuzz/tesseract.pc.in
+build-fuzz/tesseract_RelWithDebInfo.pc
+
+# Compiled library and object files
+build-fuzz/libtesseract.a
+build-fuzz/fuzzer-api.o
+
+# Generated source/header trees inside the fuzz build
+build-fuzz/bin/
+build-fuzz/include/
+build-fuzz/src/
+
+# Fuzzer runtime output (corpus generated during fuzzing runs,
+# crash artifacts)
+build-fuzz/fuzz_corpus/
+build-fuzz/fuzz_crashes/
+
+# -------------------------------------------------------------
+# Language model data (large pre-trained binary blobs,
+# individually ~1–30 MB each, 132 files total)
+# README.md and LICENSE inside tessdata_fast/ are still tracked.
+# -------------------------------------------------------------
+tessdata_fast/*.traineddata
+
+# -------------------------------------------------------------
+# Common C/C++ build artifacts (if any out-of-tree builds are
+# created in other locations)
+# -------------------------------------------------------------
+*.o
+*.a
+*.so
+*.dylib
+*.exe
+
+# CMake / Ninja residuals
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+cmake_uninstall.cmake
+build.ninja
+.ninja_deps
+.ninja_log
+install_manifest.txt
+
+# Auto-generated headers
+config_auto.h
+config_auto.h.in
+
+# pkg-config generated files
+*.pc
+
+# -------------------------------------------------------------
+# macOS system files
+# -------------------------------------------------------------
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# -------------------------------------------------------------
+# Editor / IDE files
+# -------------------------------------------------------------
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
