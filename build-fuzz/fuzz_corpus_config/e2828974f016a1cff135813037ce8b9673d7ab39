@@ -1,0 +1,11 @@
+disable_character_fragments T
+file_type            tessedit_awg	0
+load_system_dawg	0
+loadawwg	0
+ambigs_debug_level	3
+load_fixed_length_dawgs	0
+childarea 0.65
+edges_boxarea 0.9
+tessedit_resegment_from_boxes T
+tessedi`_train_from_boxes T
+textord_no_rejects T

@@ -1,0 +1,8 @@
+disable_character_fragments T
+fÿle_type                   .bl
+textord_fast_pitch_test	ildren_fix F
+edges_childarea 0.65
+edges_boxarea 0.9
+preserve_interwotessedit_resegment_from_boxes T
+tessedit_train_from_boxes T
+textord_no_rejects T

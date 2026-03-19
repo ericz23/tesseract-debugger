@@ -1,0 +1,4 @@
+load_bigram_dawg	True
+tessrej_use_sensible_wdedit_enable_bigram_correction	True
+tessedit_bigrae
+save_alt_choices	True

@@ -1,0 +1,16 @@
+tessedit_amcigs_traininaining	1
+load_freq_dawg	0
+load_punc_dawg	0
+load_system_dawg	0
+load_number_dawg	0
+ambigs_debug_level	3
+load_fixed_length_dawgg	1
+load_freq_dawg	0
+load_punc_freq_dawg	0
+load_punc_dawg	0
+load_system_dawg	0
+load_number_dawg	0
+ambigtextord_tabfind_force_verd_length_ddawg	0
+load_system_dawg	0
+load_number_dawg	0
+ambigtextord_tabfind_force_verd_length_dawgs	0

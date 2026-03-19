@@ -1,0 +1,8 @@
+file_tytch_test T
+tessedit_zero_rejtord_no_rejepe .bl
+#tessedit_use_nn F
+textordÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ_fast_pitch_test T
+tessedit_zero_rejection ssedit_resegment_from_boxes T
+tessedit_train_from_boxes T
+#textord_repeat_extraction F
+textord_no_rejects T

@@ -1,0 +1,97 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 3610320006
+INFO: Loaded 1 modules   (47 inline 8-bit counters): 47 [0x1022881d8, 0x102288207), 
+INFO: Loaded 1 PC tables (47 PCs): 47 [0x102288208,0x1022884f8), 
+INFO:        0 files found in results/cfg-7/corpus
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 3 ft: 3 corp: 1/1b exec/s: 0 rss: 36Mb
+#210	NEW    cov: 4 ft: 4 corp: 2/6b lim: 6 exec/s: 0 rss: 36Mb L: 5/5 MS: 3 CrossOver-EraseBytes-InsertRepeatedBytes-
+#3557135	NEW    cov: 7 ft: 7 corp: 3/13b lim: 256 exec/s: 1778567 rss: 93Mb L: 7/7 MS: 5 ChangeBit-InsertByte-ChangeBinInt-InsertByte-ChangeByte-
+	NEW_FUNC[1/1]: 0x000102245388 in fill_items(unsigned int*, unsigned char, unsigned char const*) parser.cpp:78
+#3557156	NEW    cov: 18 ft: 18 corp: 4/20b lim: 256 exec/s: 1778578 rss: 93Mb L: 7/7 MS: 1 CMP- DE: "\001\000\000\000"-
+#3557157	NEW    cov: 19 ft: 19 corp: 5/27b lim: 256 exec/s: 1778578 rss: 93Mb L: 7/7 MS: 1 ChangeBinInt-
+#3557183	NEW    cov: 20 ft: 20 corp: 6/34b lim: 256 exec/s: 1778591 rss: 93Mb L: 7/7 MS: 1 ChangeBinInt-
+#3557215	NEW    cov: 21 ft: 21 corp: 7/41b lim: 256 exec/s: 1778607 rss: 93Mb L: 7/7 MS: 2 ShuffleBytes-ChangeByte-
+#3557447	NEW    cov: 27 ft: 27 corp: 8/130b lim: 256 exec/s: 1778723 rss: 93Mb L: 89/89 MS: 2 ChangeBit-InsertRepeatedBytes-
+#3557464	REDUCE cov: 27 ft: 27 corp: 8/103b lim: 256 exec/s: 1778732 rss: 93Mb L: 62/62 MS: 2 ShuffleBytes-EraseBytes-
+#3557475	NEW    cov: 28 ft: 28 corp: 9/108b lim: 256 exec/s: 1778737 rss: 93Mb L: 5/62 MS: 1 EraseBytes-
+#3557496	REDUCE cov: 28 ft: 28 corp: 9/105b lim: 256 exec/s: 1778748 rss: 93Mb L: 59/59 MS: 1 EraseBytes-
+#3557638	REDUCE cov: 28 ft: 28 corp: 9/81b lim: 256 exec/s: 1778819 rss: 93Mb L: 35/35 MS: 2 InsertByte-EraseBytes-
+#3557660	REDUCE cov: 28 ft: 28 corp: 9/72b lim: 256 exec/s: 1778830 rss: 93Mb L: 26/26 MS: 2 InsertByte-EraseBytes-
+target/parser.cpp:143:26: runtime error: index 255 out of bounds for type 'const uint32_t[16]' (aka 'const unsigned int[16]')
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior target/parser.cpp:143:26 
+#3558033	NEW    cov: 32 ft: 32 corp: 10/92b lim: 256 exec/s: 1779016 rss: 93Mb L: 20/26 MS: 3 InsertRepeatedBytes-PersAutoDict-ChangeBinInt- DE: "\001\000\000\000"-
+#3558040	NEW    cov: 32 ft: 35 corp: 11/103b lim: 256 exec/s: 1779020 rss: 93Mb L: 11/26 MS: 2 PersAutoDict-PersAutoDict- DE: "\001\000\000\000"-"\001\000\000\000"-
+#3558106	REDUCE cov: 32 ft: 35 corp: 11/102b lim: 256 exec/s: 1779053 rss: 93Mb L: 6/26 MS: 1 EraseBytes-
+#3558193	REDUCE cov: 32 ft: 35 corp: 11/101b lim: 256 exec/s: 1779096 rss: 93Mb L: 6/26 MS: 2 ChangeByte-EraseBytes-
+#3558259	NEW    cov: 33 ft: 36 corp: 12/123b lim: 256 exec/s: 1779129 rss: 93Mb L: 22/26 MS: 1 CMP- DE: "\001\000"-
+#3558425	REDUCE cov: 33 ft: 36 corp: 12/115b lim: 256 exec/s: 1779212 rss: 93Mb L: 12/26 MS: 1 EraseBytes-
+#3558509	REDUCE cov: 33 ft: 36 corp: 12/114b lim: 256 exec/s: 1779254 rss: 93Mb L: 5/26 MS: 4 ChangeByte-InsertByte-InsertByte-EraseBytes-
+#3558535	REDUCE cov: 33 ft: 36 corp: 12/109b lim: 256 exec/s: 1779267 rss: 93Mb L: 17/26 MS: 1 EraseBytes-
+#3558665	REDUCE cov: 33 ft: 40 corp: 13/245b lim: 256 exec/s: 1779332 rss: 93Mb L: 136/136 MS: 5 InsertByte-ChangeBit-InsertByte-PersAutoDict-InsertRepeatedBytes- DE: "\001\000"-
+#3558722	REDUCE cov: 33 ft: 40 corp: 13/193b lim: 256 exec/s: 1779361 rss: 93Mb L: 84/84 MS: 2 ChangeBit-EraseBytes-
+#3558797	REDUCE cov: 33 ft: 40 corp: 13/191b lim: 256 exec/s: 1779398 rss: 93Mb L: 15/84 MS: 5 EraseBytes-ChangeByte-PersAutoDict-ChangeBit-ChangeBinInt- DE: "\001\000"-
+#3558887	REDUCE cov: 33 ft: 40 corp: 13/183b lim: 256 exec/s: 1779443 rss: 93Mb L: 76/76 MS: 5 ShuffleBytes-CopyPart-CMP-ChangeBinInt-EraseBytes- DE: "\001\000\000\000\000\000\000\000"-
+#3558971	REDUCE cov: 33 ft: 41 corp: 14/232b lim: 256 exec/s: 1779485 rss: 93Mb L: 49/76 MS: 4 PersAutoDict-ChangeBit-CrossOver-CopyPart- DE: "\001\000"-
+#3559030	REDUCE cov: 33 ft: 41 corp: 14/201b lim: 256 exec/s: 1779515 rss: 93Mb L: 45/49 MS: 4 CopyPart-CrossOver-ChangeByte-EraseBytes-
+#3559051	REDUCE cov: 33 ft: 41 corp: 14/199b lim: 256 exec/s: 1779525 rss: 93Mb L: 10/49 MS: 1 EraseBytes-
+#3559262	REDUCE cov: 33 ft: 41 corp: 14/197b lim: 256 exec/s: 1779631 rss: 93Mb L: 5/49 MS: 1 EraseBytes-
+#3559313	REDUCE cov: 33 ft: 41 corp: 14/192b lim: 256 exec/s: 1779656 rss: 93Mb L: 10/49 MS: 1 EraseBytes-
+=================================================================
+==53415==ERROR: AddressSanitizer: global-buffer-overflow on address 0x00010227b720 at pc 0x000102245360 bp 0x00016dbba190 sp 0x00016dbba188
+READ of size 4 at 0x00010227b720 thread T0
+    #0 0x00010224535c in parse parser.cpp:143
+    #1 0x000102245710 in LLVMFuzzerTestOneInput fuzz_target.cpp:14
+    #2 0x00010225ea94 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) FuzzerLoop.cpp:619
+    #3 0x00010225e21c in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool, bool*) FuzzerLoop.cpp:516
+    #4 0x00010225fd68 in fuzzer::Fuzzer::MutateAndTestOne() FuzzerLoop.cpp:765
+    #5 0x000102260a90 in fuzzer::Fuzzer::Loop(std::__1::vector<fuzzer::SizedFile, std::__1::allocator<fuzzer::SizedFile>>&) FuzzerLoop.cpp:910
+    #6 0x000102250c5c in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) FuzzerDriver.cpp:916
+    #7 0x00010227aed8 in main FuzzerMain.cpp:20
+    #8 0x00019179eb94 in start+0x17b8 (dyld:arm64+0xfffffffffff3ab94)
+
+0x00010227b720 is located 0 bytes after global variable 'lookup' defined in 'target/parser.cpp' (0x00010227b6e0) of size 64
+SUMMARY: AddressSanitizer: global-buffer-overflow parser.cpp:143 in parse
+Shadow bytes around the buggy address:
+  0x00010227b480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b500: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b580: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b600: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b680: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+=>0x00010227b700: 00 00 00 00[f9]f9 f9 f9 00 00 00 00 00 00 00 00
+  0x00010227b780: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b800: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b880: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b900: 07 f9 f9 f9 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00010227b980: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==53415==ABORTING
+MS: 2 CMP-ChangeBit- DE: "\001\000"-; base unit: 1c6ae76b5b76520aad00ed52a7d9453f4ce8e9e2
+0xfe,0xca,0x2,0x0,0x1,0x0,0x0,0x10,0xff,0xff,0xff,0xa,
+\376\312\002\000\001\000\000\020\377\377\377\012
+artifact_prefix='results/cfg-7/crashes/'; Test unit written to results/cfg-7/crashes/crash-7f22d87078152298bf63d70167480fb6b9062866
+Base64: /soCAAEAABD///8K
+stat::number_of_executed_units: 3559330
+stat::average_exec_per_sec:     1779665
+stat::new_units_added:          29
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              93
+FUZZER_EXIT_CODE: 134

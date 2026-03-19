@@ -1,0 +1,15 @@
+tessedit_ambigs_traininaining	1
+load_freq_dawg	0
+load_punc_dawg	0
+load_system_dawg	0
+lo-ad_number_dawg	0
+ambigs_debug_level	3
+load_fixed_length_dawgg	1
+load_freq_dawg	0
+file_tytch_test T
+load_punc_dawg	0
+load_system_dawg	0
+load_number_dawg	0
+ambigs_debug_level	3
+load_fixed_tlength_dawgs	0essedit_zero_rejection s
+sedit_resegment_from_boxes 

@@ -1,0 +1,40 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 3917901783
+INFO: Loaded 1 modules   (47 inline 8-bit counters): 47 [0x1023981d8, 0x102398207), 
+INFO: Loaded 1 PC tables (47 PCs): 47 [0x102398208,0x1023984f8), 
+INFO:        0 files found in results/cfg-5/corpus
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 3 ft: 3 corp: 1/1b exec/s: 0 rss: 27Mb
+#214	NEW    cov: 4 ft: 4 corp: 2/7b lim: 6 exec/s: 0 rss: 27Mb L: 6/6 MS: 2 CrossOver-InsertRepeatedBytes-
+#219	REDUCE cov: 4 ft: 4 corp: 2/6b lim: 6 exec/s: 0 rss: 27Mb L: 5/5 MS: 5 ShuffleBytes-EraseBytes-ChangeBit-CopyPart-EraseBytes-
+#7518819	NEW    cov: 7 ft: 7 corp: 3/63b lim: 256 exec/s: 3759409 rss: 27Mb L: 57/57 MS: 5 ShuffleBytes-CopyPart-CrossOver-ChangeBinInt-InsertRepeatedBytes-
+#7518826	REDUCE cov: 7 ft: 7 corp: 3/35b lim: 256 exec/s: 3759413 rss: 27Mb L: 29/29 MS: 2 ChangeByte-EraseBytes-
+#7518878	REDUCE cov: 7 ft: 7 corp: 3/27b lim: 256 exec/s: 3759439 rss: 27Mb L: 21/21 MS: 2 InsertByte-EraseBytes-
+#7518899	REDUCE cov: 7 ft: 7 corp: 3/18b lim: 256 exec/s: 3759449 rss: 27Mb L: 12/12 MS: 1 EraseBytes-
+#7518996	REDUCE cov: 7 ft: 7 corp: 3/16b lim: 256 exec/s: 3759498 rss: 27Mb L: 10/10 MS: 2 ShuffleBytes-EraseBytes-
+#7519003	REDUCE cov: 7 ft: 7 corp: 3/13b lim: 256 exec/s: 3759501 rss: 27Mb L: 7/7 MS: 2 ChangeBit-EraseBytes-
+#7519014	REDUCE cov: 7 ft: 7 corp: 3/12b lim: 256 exec/s: 3759507 rss: 27Mb L: 6/6 MS: 1 EraseBytes-
+#7519046	REDUCE cov: 7 ft: 7 corp: 3/11b lim: 256 exec/s: 3759523 rss: 27Mb L: 5/5 MS: 2 CopyPart-EraseBytes-
+#7520891	REDUCE cov: 13 ft: 13 corp: 4/22b lim: 256 exec/s: 3760445 rss: 27Mb L: 11/11 MS: 5 ChangeBit-InsertByte-CrossOver-CMP-ShuffleBytes- DE: "\001\000\000\000"-
+#7520902	NEW    cov: 14 ft: 14 corp: 5/33b lim: 256 exec/s: 3760451 rss: 27Mb L: 11/11 MS: 1 CMP- DE: "\377\377\377\377"-
+	NEW_FUNC[1/1]: 0x000102354ff0 in fill_items(unsigned int*, unsigned char, unsigned char const*) parser.cpp:78
+#7520953	NEW    cov: 20 ft: 20 corp: 6/44b lim: 256 exec/s: 3760476 rss: 27Mb L: 11/11 MS: 1 ChangeBinInt-
+#7520959	REDUCE cov: 20 ft: 20 corp: 6/40b lim: 256 exec/s: 3760479 rss: 27Mb L: 7/11 MS: 1 EraseBytes-
+#7520980	REDUCE cov: 20 ft: 20 corp: 6/38b lim: 256 exec/s: 3760490 rss: 27Mb L: 9/11 MS: 1 EraseBytes-
+#7521086	REDUCE cov: 21 ft: 21 corp: 7/47b lim: 256 exec/s: 3760543 rss: 27Mb L: 9/11 MS: 1 ChangeBinInt-
+#7521167	REDUCE cov: 21 ft: 21 corp: 7/45b lim: 256 exec/s: 3760583 rss: 27Mb L: 9/9 MS: 1 EraseBytes-
+#7521168	REDUCE cov: 21 ft: 21 corp: 7/43b lim: 256 exec/s: 3760584 rss: 27Mb L: 7/9 MS: 1 EraseBytes-
+#7521266	REDUCE cov: 21 ft: 21 corp: 7/39b lim: 256 exec/s: 3760633 rss: 27Mb L: 5/9 MS: 3 ChangeBinInt-ChangeByte-EraseBytes-
+#7521299	REDUCE cov: 21 ft: 21 corp: 7/38b lim: 256 exec/s: 3760649 rss: 27Mb L: 6/9 MS: 3 ChangeBit-ChangeByte-EraseBytes-
+#7521325	REDUCE cov: 26 ft: 26 corp: 8/51b lim: 256 exec/s: 3760662 rss: 27Mb L: 13/13 MS: 1 PersAutoDict- DE: "\001\000\000\000"-
+#7521492	NEW    cov: 27 ft: 30 corp: 9/163b lim: 256 exec/s: 3760746 rss: 27Mb L: 112/112 MS: 2 ChangeBit-InsertRepeatedBytes-
+#7521553	REDUCE cov: 28 ft: 31 corp: 10/168b lim: 256 exec/s: 3760776 rss: 27Mb L: 5/112 MS: 1 EraseBytes-
+#7521574	REDUCE cov: 28 ft: 31 corp: 10/128b lim: 256 exec/s: 3760787 rss: 27Mb L: 72/72 MS: 1 EraseBytes-
+#7521632	REDUCE cov: 28 ft: 31 corp: 10/126b lim: 256 exec/s: 3760816 rss: 27Mb L: 70/70 MS: 3 CMP-ChangeBit-EraseBytes- DE: "6E Y\001\000\000\000"-
+#7521715	REDUCE cov: 28 ft: 31 corp: 10/106b lim: 256 exec/s: 3760857 rss: 27Mb L: 50/50 MS: 3 InsertRepeatedBytes-ChangeBit-EraseBytes-
+#7521936	REDUCE cov: 28 ft: 31 corp: 10/103b lim: 256 exec/s: 3760968 rss: 27Mb L: 47/47 MS: 1 EraseBytes-
+#7522703	REDUCE cov: 28 ft: 35 corp: 11/237b lim: 256 exec/s: 3761351 rss: 27Mb L: 134/134 MS: 2 CopyPart-InsertRepeatedBytes-
+#7522864	REDUCE cov: 28 ft: 35 corp: 11/227b lim: 256 exec/s: 3761432 rss: 27Mb L: 124/124 MS: 1 EraseBytes-
+#7522932	REDUCE cov: 28 ft: 35 corp: 11/223b lim: 256 exec/s: 3761466 rss: 27Mb L: 43/124 MS: 3 PersAutoDict-CrossOver-EraseBytes- DE: "\001\000\000\000"-
+#7523004	REDUCE cov: 28 ft: 35 corp: 11/220b lim: 256 exec/s: 3761502 rss: 27Mb L: 10/124 MS: 2 ChangeBit-EraseBytes-
+FUZZER_EXIT_CODE: 134

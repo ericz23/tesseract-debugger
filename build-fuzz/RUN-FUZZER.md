@@ -87,6 +87,23 @@ mkdir -p build-fuzz/fuzz_corpus build-fuzz/fuzz_crashes
 cp corpus/* build-fuzz/fuzz_corpus/
 ```
 
+### Word-image seeds (dictionary/word-correction path)
+
+The fuzzer stalls before reaching Tesseract's dictionary correction layer
+(`one_ell_conflict` and related functions) because random byte mutations rarely
+produce images with recognizable text.  `corpus/generate_word_seeds.py`
+generates 675 word images in PNG/JPEG/BMP/TIFF format — covering words with
+high ell/one/eye character density (`illegal`, `fill`, `lull`, etc.) across
+three fonts and three point sizes — to give libFuzzer starting points whose
+mutations are more likely to survive the LSTM stage and enter post-processing.
+
+Requires `Pillow` (`pip3 install Pillow`).  Run once from the repo root:
+
+```bash
+python3 corpus/generate_word_seeds.py
+cp corpus/word_*.* build-fuzz/fuzz_corpus/
+```
+
 ### Run the fuzzer
 
 From the **repo root**:

@@ -1,0 +1,49 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 3357015032
+INFO: Loaded 1 modules   (13 inline 8-bit counters): 13 [0x100e2c000, 0x100e2c00d), 
+INFO: Loaded 1 PC tables (13 PCs): 13 [0x100e2c010,0x100e2c0e0), 
+INFO:        0 files found in results/cfg-1/corpus
+INFO: A corpus is not provided, starting from an empty corpus
+#2	INITED cov: 3 ft: 3 corp: 1/1b exec/s: 0 rss: 27Mb
+#239	NEW    cov: 4 ft: 4 corp: 2/6b lim: 6 exec/s: 0 rss: 27Mb L: 5/5 MS: 2 CopyPart-InsertRepeatedBytes-
+#539049	NEW    cov: 5 ft: 5 corp: 3/12b lim: 256 exec/s: 0 rss: 27Mb L: 6/6 MS: 5 ChangeBit-ChangeByte-ChangeBinInt-CopyPart-ChangeByte-
+#539255	REDUCE cov: 5 ft: 5 corp: 3/11b lim: 256 exec/s: 0 rss: 27Mb L: 5/5 MS: 1 EraseBytes-
+#539777	REDUCE cov: 7 ft: 7 corp: 4/18b lim: 256 exec/s: 0 rss: 27Mb L: 7/7 MS: 2 CrossOver-ChangeBit-
+#539815	NEW    cov: 8 ft: 8 corp: 5/26b lim: 256 exec/s: 0 rss: 27Mb L: 8/8 MS: 3 InsertByte-ChangeByte-ChangeBit-
+#539876	NEW    cov: 9 ft: 9 corp: 6/35b lim: 256 exec/s: 0 rss: 27Mb L: 9/9 MS: 1 InsertByte-
+#539925	NEW    cov: 10 ft: 10 corp: 7/127b lim: 256 exec/s: 0 rss: 27Mb L: 92/92 MS: 4 EraseBytes-CopyPart-CrossOver-InsertRepeatedBytes-
+#540061	REDUCE cov: 10 ft: 10 corp: 7/125b lim: 256 exec/s: 0 rss: 27Mb L: 5/92 MS: 1 EraseBytes-
+#540601	NEW    cov: 11 ft: 11 corp: 8/358b lim: 256 exec/s: 0 rss: 27Mb L: 233/233 MS: 5 InsertRepeatedBytes-ChangeBit-ChangeBinInt-InsertRepeatedBytes-CopyPart-
+#541156	REDUCE cov: 11 ft: 11 corp: 8/314b lim: 256 exec/s: 0 rss: 27Mb L: 48/233 MS: 5 EraseBytes-InsertByte-EraseBytes-ShuffleBytes-CMP- DE: "\005\000\000\000\000\000\000\000"-
+#541712	REDUCE cov: 11 ft: 11 corp: 8/299b lim: 256 exec/s: 0 rss: 27Mb L: 33/233 MS: 1 EraseBytes-
+#542108	REDUCE cov: 11 ft: 11 corp: 8/283b lim: 256 exec/s: 0 rss: 27Mb L: 17/233 MS: 1 EraseBytes-
+#542741	REDUCE cov: 11 ft: 11 corp: 8/279b lim: 256 exec/s: 0 rss: 27Mb L: 13/233 MS: 3 EraseBytes-CrossOver-CopyPart-
+#543737	REDUCE cov: 11 ft: 11 corp: 8/273b lim: 256 exec/s: 0 rss: 27Mb L: 7/233 MS: 1 EraseBytes-
+#545563	REDUCE cov: 13 ft: 13 corp: 9/282b lim: 256 exec/s: 0 rss: 27Mb L: 9/233 MS: 1 CMP- DE: "\001\000"-
+#546599	REDUCE cov: 13 ft: 13 corp: 9/279b lim: 256 exec/s: 0 rss: 27Mb L: 6/233 MS: 1 EraseBytes-
+#547592	REDUCE cov: 13 ft: 13 corp: 9/278b lim: 256 exec/s: 0 rss: 27Mb L: 8/233 MS: 3 ChangeBit-EraseBytes-CMP- DE: "\001\000"-
+#548873	REDUCE cov: 13 ft: 13 corp: 9/277b lim: 256 exec/s: 0 rss: 27Mb L: 7/233 MS: 1 EraseBytes-
+#548899	REDUCE cov: 13 ft: 13 corp: 9/276b lim: 256 exec/s: 0 rss: 27Mb L: 6/233 MS: 1 EraseBytes-
+#562657	REDUCE cov: 13 ft: 13 corp: 9/274b lim: 256 exec/s: 0 rss: 27Mb L: 6/233 MS: 3 InsertByte-EraseBytes-PersAutoDict- DE: "\001\000"-
+#564035	REDUCE cov: 13 ft: 13 corp: 9/273b lim: 256 exec/s: 0 rss: 27Mb L: 5/233 MS: 3 ChangeByte-CopyPart-EraseBytes-
+#773589	REDUCE cov: 13 ft: 13 corp: 9/57b lim: 256 exec/s: 0 rss: 27Mb L: 17/17 MS: 4 ShuffleBytes-PersAutoDict-CrossOver-InsertByte- DE: "\005\000\000\000\000\000\000\000"-
+#794417	REDUCE cov: 13 ft: 13 corp: 9/49b lim: 256 exec/s: 0 rss: 27Mb L: 9/9 MS: 3 EraseBytes-ChangeBinInt-CMP- DE: "\000\000\000\000"-
+#797073	REDUCE cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 0 rss: 27Mb L: 6/7 MS: 1 EraseBytes-
+#8388608	pulse  cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 4194304 rss: 27Mb
+#16777216	pulse  cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 3355443 rss: 27Mb
+#33554432	pulse  cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 3050402 rss: 27Mb
+#67108864	pulse  cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 3050402 rss: 27Mb
+#134217728	pulse  cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 3050402 rss: 27Mb
+#184150723	DONE   cov: 13 ft: 13 corp: 9/46b lim: 256 exec/s: 3018864 rss: 27Mb
+###### Recommended dictionary. ######
+"\005\000\000\000\000\000\000\000" # Uses: 4176410
+"\001\000" # Uses: 5901354
+"\000\000\000\000" # Uses: 5707794
+###### End of recommended dictionary. ######
+Done 184150723 runs in 61 second(s)
+stat::number_of_executed_units: 184150723
+stat::average_exec_per_sec:     3018864
+stat::new_units_added:          24
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              27
+FUZZER_EXIT_CODE: 0

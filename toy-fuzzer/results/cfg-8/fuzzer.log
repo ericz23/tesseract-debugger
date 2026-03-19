@@ -1,0 +1,96 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 3612605369
+INFO: Loaded 1 modules   (47 inline 8-bit counters): 47 [0x1024b01d8, 0x1024b0207), 
+INFO: Loaded 1 PC tables (47 PCs): 47 [0x1024b0208,0x1024b04f8), 
+INFO:        5 files found in results/cfg-8/corpus
+INFO: seed corpus: files: 5 min: 8b max: 22b total: 72b rss: 35Mb
+#6	INITED cov: 3 ft: 3 corp: 1/8b exec/s: 0 rss: 36Mb
+#18	REDUCE cov: 3 ft: 3 corp: 1/6b lim: 8 exec/s: 0 rss: 36Mb L: 6/6 MS: 2 CrossOver-EraseBytes-
+#22	REDUCE cov: 4 ft: 4 corp: 2/9b lim: 8 exec/s: 0 rss: 37Mb L: 3/6 MS: 4 ChangeByte-ShuffleBytes-ChangeByte-EraseBytes-
+#29	REDUCE cov: 4 ft: 4 corp: 2/7b lim: 8 exec/s: 0 rss: 37Mb L: 1/6 MS: 2 ShuffleBytes-CrossOver-
+#91	REDUCE cov: 4 ft: 4 corp: 2/6b lim: 8 exec/s: 0 rss: 37Mb L: 5/5 MS: 2 EraseBytes-CrossOver-
+#31690	REDUCE cov: 9 ft: 9 corp: 3/12b lim: 256 exec/s: 0 rss: 39Mb L: 6/6 MS: 4 ChangeByte-ChangeByte-CrossOver-ChangeBit-
+#31692	NEW    cov: 12 ft: 12 corp: 4/18b lim: 256 exec/s: 0 rss: 39Mb L: 6/6 MS: 2 ChangeBit-CopyPart-
+#31698	NEW    cov: 14 ft: 14 corp: 5/25b lim: 256 exec/s: 0 rss: 39Mb L: 7/7 MS: 1 InsertByte-
+#31735	NEW    cov: 15 ft: 15 corp: 6/33b lim: 256 exec/s: 0 rss: 39Mb L: 8/8 MS: 2 ChangeBit-InsertByte-
+#31747	NEW    cov: 16 ft: 16 corp: 7/51b lim: 256 exec/s: 0 rss: 39Mb L: 18/18 MS: 2 CrossOver-CopyPart-
+#31753	REDUCE cov: 16 ft: 16 corp: 7/49b lim: 256 exec/s: 0 rss: 39Mb L: 16/16 MS: 1 EraseBytes-
+	NEW_FUNC[1/1]: 0x00010246d388 in fill_items(unsigned int*, unsigned char, unsigned char const*) parser.cpp:78
+#31869	NEW    cov: 22 ft: 22 corp: 8/60b lim: 256 exec/s: 0 rss: 40Mb L: 11/16 MS: 1 CMP- DE: "\001\000\000\000"-
+target/parser.cpp:143:26: runtime error: index 255 out of bounds for type 'const uint32_t[16]' (aka 'const unsigned int[16]')
+SUMMARY: UndefinedBehaviorSanitizer: undefined-behavior target/parser.cpp:143:26 
+#31924	REDUCE cov: 30 ft: 30 corp: 9/134b lim: 256 exec/s: 0 rss: 40Mb L: 74/74 MS: 5 ChangeByte-InsertByte-InsertRepeatedBytes-ChangeBinInt-CMP- DE: "\001\000\000\000"-
+#31931	REDUCE cov: 30 ft: 30 corp: 9/128b lim: 256 exec/s: 0 rss: 40Mb L: 10/74 MS: 2 ChangeBinInt-EraseBytes-
+#31947	REDUCE cov: 30 ft: 30 corp: 9/127b lim: 256 exec/s: 0 rss: 40Mb L: 6/74 MS: 1 EraseBytes-
+#32073	REDUCE cov: 32 ft: 32 corp: 10/137b lim: 256 exec/s: 0 rss: 40Mb L: 10/74 MS: 1 PersAutoDict- DE: "\001\000\000\000"-
+#32085	NEW    cov: 33 ft: 33 corp: 11/145b lim: 256 exec/s: 0 rss: 40Mb L: 8/74 MS: 2 InsertByte-EraseBytes-
+#32257	REDUCE cov: 33 ft: 33 corp: 11/130b lim: 256 exec/s: 0 rss: 40Mb L: 59/59 MS: 2 InsertByte-EraseBytes-
+#32493	REDUCE cov: 33 ft: 33 corp: 11/127b lim: 256 exec/s: 0 rss: 40Mb L: 5/59 MS: 1 EraseBytes-
+#32579	REDUCE cov: 33 ft: 33 corp: 11/111b lim: 256 exec/s: 0 rss: 40Mb L: 43/43 MS: 1 EraseBytes-
+#32866	REDUCE cov: 34 ft: 37 corp: 12/188b lim: 256 exec/s: 0 rss: 40Mb L: 77/77 MS: 2 EraseBytes-CopyPart-
+#32927	REDUCE cov: 34 ft: 37 corp: 12/185b lim: 256 exec/s: 0 rss: 40Mb L: 7/77 MS: 1 EraseBytes-
+#33108	NEW    cov: 34 ft: 41 corp: 13/279b lim: 256 exec/s: 0 rss: 40Mb L: 94/94 MS: 1 InsertRepeatedBytes-
+=================================================================
+==53503==ERROR: AddressSanitizer: stack-buffer-overflow on address 0x00016d992208 at pc 0x00010246d250 bp 0x00016d992190 sp 0x00016d992188
+WRITE of size 1 at 0x00016d992208 thread T0
+    #0 0x00010246d24c in parse parser.cpp:113
+    #1 0x00010246d710 in LLVMFuzzerTestOneInput fuzz_target.cpp:14
+    #2 0x000102486a94 in fuzzer::Fuzzer::ExecuteCallback(unsigned char const*, unsigned long) FuzzerLoop.cpp:619
+    #3 0x00010248621c in fuzzer::Fuzzer::RunOne(unsigned char const*, unsigned long, bool, fuzzer::InputInfo*, bool, bool*) FuzzerLoop.cpp:516
+    #4 0x000102487d68 in fuzzer::Fuzzer::MutateAndTestOne() FuzzerLoop.cpp:765
+    #5 0x000102488a90 in fuzzer::Fuzzer::Loop(std::__1::vector<fuzzer::SizedFile, std::__1::allocator<fuzzer::SizedFile>>&) FuzzerLoop.cpp:910
+    #6 0x000102478c5c in fuzzer::FuzzerDriver(int*, char***, int (*)(unsigned char const*, unsigned long)) FuzzerDriver.cpp:916
+    #7 0x0001024a2ed8 in main FuzzerMain.cpp:20
+    #8 0x00019179eb94 in start+0x17b8 (dyld:arm64+0xfffffffffff3ab94)
+
+Address 0x00016d992208 is located in stack of thread T0 at offset 104 in frame
+    #0 0x00010246cac4 in parse parser.cpp:90
+
+  This frame has 1 object(s):
+    [32, 104) 'pkt' (line 108) <== Memory access at offset 104 overflows this variable
+HINT: this may be a false positive if your program uses some custom stack unwind mechanism, swapcontext or vfork
+      (longjmp and C++ exceptions *are* supported)
+SUMMARY: AddressSanitizer: stack-buffer-overflow parser.cpp:113 in parse
+Shadow bytes around the buggy address:
+  0x00016d991f80: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992000: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992080: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992100: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992180: 00 00 00 00 f1 f1 f1 f1 00 00 00 00 00 00 00 00
+=>0x00016d992200: 00[f3]f3 f3 f3 f3 f3 f3 00 00 00 00 00 00 00 00
+  0x00016d992280: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992300: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992380: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992400: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+  0x00016d992480: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+Shadow byte legend (one shadow byte represents 8 application bytes):
+  Addressable:           00
+  Partially addressable: 01 02 03 04 05 06 07 
+  Heap left redzone:       fa
+  Freed heap region:       fd
+  Stack left redzone:      f1
+  Stack mid redzone:       f2
+  Stack right redzone:     f3
+  Stack after return:      f5
+  Stack use after scope:   f8
+  Global redzone:          f9
+  Global init order:       f6
+  Poisoned by user:        f7
+  Container overflow:      fc
+  Array cookie:            ac
+  Intra object redzone:    bb
+  ASan internal:           fe
+  Left alloca redzone:     ca
+  Right alloca redzone:    cb
+==53503==ABORTING
+MS: 2 CopyPart-InsertRepeatedBytes-; base unit: cc49cf1e1d807b6c43e3d161a8f94741154593d3
+0xfe,0xca,0x2,0xfe,0x46,0x11,0xfe,0x3a,0x1,0x2,0xff,0xff,0xff,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xc2,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x1,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0xff,0x11,0xfe,0x2,0x12,0x1,0x0,0x3b,0x0,0x19,
+\376\312\002\376F\021\376:\001\002\377\377\377\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\302\377\377\377\377\377\377\377\377\377\377\001\377\377\377\377\377\377\377\377\377\377\377\021\376\002\022\001\000;\000\031
+artifact_prefix='results/cfg-8/crashes/'; Test unit written to results/cfg-8/crashes/crash-b89c2255330ba5d8bb5a7157e8dbf0425775d3c4
+Base64: /soC/kYR/joBAv///8LCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsLCwsL/////////////Af//////////////Ef4CEgEAOwAZ
+stat::number_of_executed_units: 33120
+stat::average_exec_per_sec:     0
+stat::new_units_added:          22
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              41
+FUZZER_EXIT_CODE: 134

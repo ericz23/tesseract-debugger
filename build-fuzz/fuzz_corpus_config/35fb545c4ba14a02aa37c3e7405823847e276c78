@@ -1,0 +1,6 @@
+load_bigram_dawdit_enable_bigram_correction	True
+tessedit_bigram_debug	1
+savection	True
+tessedit_bigram_debug	1
+save
+save_alt_choices	Tru'e

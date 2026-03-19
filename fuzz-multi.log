@@ -1,0 +1,94 @@
+INFO: Running with entropic power schedule (0xFF, 100).
+INFO: Seed: 1245927905
+INFO: Loaded 1 modules   (274365 inline 8-bit counters): 274365 [0x105330478, 0x105373435), 
+INFO: Loaded 1 PC tables (274365 PCs): 274365 [0x105373438,0x1057a3008), 
+INFO:     6367 files found in /Users/ericzhu/Documents/Work & School/Stanford/Stanford Classes/CS 295/Tesseract_Debugger/build-fuzz/fuzz_corpus
+INFO: -max_len is not provided; libFuzzer will not generate inputs larger than 240826 bytes
+INFO: seed corpus: files: 6367 min: 11b max: 240826b total: 33632522b rss: 71Mb
+libpng error: IHDR: CRC error
+#2048	pulse  cov: 6 ft: 6 corp: 1/11b exec/s: 1024 rss: 71Mb
+#4096	pulse  cov: 6 ft: 6 corp: 1/11b exec/s: 1365 rss: 71Mb
+#6368	INITED cov: 6 ft: 6 corp: 1/11b exec/s: 1273 rss: 71Mb
+#6372	REDUCE cov: 6 ft: 6 corp: 1/9b lim: 14 exec/s: 1274 rss: 71Mb L: 9/9 MS: 4 ChangeBit-ShuffleBytes-CopyPart-EraseBytes-
+#6380	REDUCE cov: 6 ft: 6 corp: 1/7b lim: 14 exec/s: 1276 rss: 71Mb L: 7/7 MS: 3 InsertByte-CMP-EraseBytes- DE: "\2073\000\000\000\000\000\000"-
+#6424	REDUCE cov: 6 ft: 6 corp: 1/6b lim: 14 exec/s: 1284 rss: 71Mb L: 6/6 MS: 4 ChangeBit-ChangeBit-CrossOver-EraseBytes-
+#6427	REDUCE cov: 6 ft: 6 corp: 1/4b lim: 14 exec/s: 1285 rss: 71Mb L: 4/4 MS: 3 ChangeBit-ShuffleBytes-EraseBytes-
+#6448	REDUCE cov: 7 ft: 7 corp: 2/7b lim: 14 exec/s: 1289 rss: 71Mb L: 3/4 MS: 1 EraseBytes-
+#6514	REDUCE cov: 7 ft: 7 corp: 2/6b lim: 14 exec/s: 1302 rss: 71Mb L: 2/4 MS: 1 EraseBytes-
+#6615	REDUCE cov: 7 ft: 7 corp: 2/5b lim: 14 exec/s: 1323 rss: 71Mb L: 1/4 MS: 1 EraseBytes-
+#8192	pulse  cov: 7 ft: 7 corp: 2/5b lim: 29 exec/s: 1638 rss: 71Mb
+#16384	pulse  cov: 7 ft: 7 corp: 2/5b lim: 110 exec/s: 2340 rss: 71Mb
+#32768	pulse  cov: 7 ft: 7 corp: 2/5b lim: 269 exec/s: 3276 rss: 71Mb
+#65536	pulse  cov: 7 ft: 7 corp: 2/5b lim: 598 exec/s: 4369 rss: 71Mb
+#131072	pulse  cov: 7 ft: 7 corp: 2/5b lim: 1250 exec/s: 5698 rss: 71Mb
+#262144	pulse  cov: 7 ft: 7 corp: 2/5b lim: 2545 exec/s: 6898 rss: 71Mb
+#524288	pulse  cov: 7 ft: 7 corp: 2/5b lim: 5164 exec/s: 8594 rss: 71Mb
+#1048576	pulse  cov: 7 ft: 7 corp: 2/5b lim: 10384 exec/s: 9892 rss: 71Mb
+#2097152	pulse  cov: 7 ft: 7 corp: 2/5b lim: 20828 exec/s: 11155 rss: 71Mb
+Premature end of JPEG file
+JPEG datastream contains no image
+Unsupported marker type 0x41
+Unsupported marker type 0x41
+#4194304	pulse  cov: 7 ft: 7 corp: 2/5b lim: 41725 exec/s: 11748 rss: 71Mb
+Premature end of JPEG file
+JPEG datastream contains no image
+Corrupt JPEG data: 3 extraneous bytes before marker 0x04
+Unsupported marker type 0x04
+Unsupported marker type 0xa5
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Corrupt JPEG data: 38 extraneous bytes before marker 0xd8
+Invalid JPEG file structure: two SOI markers
+Corrupt JPEG data: 38 extraneous bytes before marker 0xd8
+Invalid JPEG file structure: two SOI markers
+Corrupt JPEG data: 38 extraneous bytes before marker 0xd8
+Invalid JPEG file structure: two SOI markers
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+#8388608	pulse  cov: 7 ft: 7 corp: 2/5b lim: 83529 exec/s: 11781 rss: 71Mb
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Corrupt JPEG data: 124 extraneous bytes before marker 0x04
+Unsupported marker type 0x04
+Corrupt JPEG data: 124 extraneous bytes before marker 0x04
+Unsupported marker type 0x04
+Corrupt JPEG data: 125 extraneous bytes before marker 0x04
+Unsupported marker type 0x04
+Corrupt JPEG data: 169 extraneous bytes before marker 0x04
+Unsupported marker type 0x04
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Premature end of JPEG file
+JPEG datastream contains no image
+Corrupt JPEG data: 12 extraneous bytes before marker 0x7e
+Unsupported marker type 0x7e
+Corrupt JPEG data: 12 extraneous bytes before marker 0x7e
+Unsupported marker type 0x7e
+Premature end of JPEG file
+JPEG datastream contains no image
+#13741174	DONE   cov: 7 ft: 7 corp: 2/5b lim: 136895 exec/s: 11441 rss: 71Mb
+###### Recommended dictionary. ######
+"\2073\000\000\000\000\000\000" # Uses: 933577
+###### End of recommended dictionary. ######
+Done 13741174 runs in 1201 second(s)
+stat::number_of_executed_units: 13741174
+stat::average_exec_per_sec:     11441
+stat::new_units_added:          7
+stat::slowest_unit_time_sec:    0
+stat::peak_rss_mb:              71
